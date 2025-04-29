@@ -36,7 +36,7 @@ Para cada Entidade um objeto responsável pelo acesso a tabela no banco de dados
   
     -findAll.
   
-DaoFactory: O programa depender apenas da interface (como SellerDao) e não conhecer a implementação concreta (como SellerDaoJDBC) está na aplicação do princípio da inversão de dependência (Dependency Inversion Principle), que faz parte dos princípios SOLID da programação orientada a objetos
+DaoFactory: O programa depender apenas da interface (como SellerDao) e não conhecer a implementação concreta (como SellerDaoJDBC) está na aplicação do princípio da inversão de dependência (Dependency Inversion Principle), que faz parte dos princípios SOLID da programação orientada a objetos.
 <br>
 
 Implementação:
