@@ -14,6 +14,7 @@ public class Program {
         Seller seller = new Seller(21,"Tais", "t@gmail.com", new Date(), 4.000, obj);
 
         SellerDao sellerDao = DaoFactory.createSellerDao(); //apenas a interface, podendo chamar qualquer implementação que esteja nela
-        System.out.println(seller);
+        Seller seller1 = sellerDao.findById(3);
+        System.out.println(seller1);
     }
 }
