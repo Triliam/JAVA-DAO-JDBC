@@ -21,7 +21,7 @@ public class Program {
         System.out.println(seller1);
 
         System.out.println("--- Test 2: seller findByDepartment ---");
-        Department department = new Department(200, null);
+        Department department = new Department(2, null);
         List<Seller> list = sellerDao.findByDepartment(department);
         for(Seller obj1 : list) {
             System.out.println(obj1);
@@ -33,5 +33,10 @@ public class Program {
         for(Seller obj2 : list1) {
             System.out.println(obj2);
         }
+
+        System.out.println("--- Test 4: seller insert ---");
+        Seller seller2 = new Seller(null, "Joice", "j@gmail.com", new Date(), 4000.0, department);
+        sellerDao.insert(seller2);
+        System.out.println(seller2 + " New Id: " + seller2.getId());
     }
 }
