@@ -1,5 +1,7 @@
 package application;
 
+import model.dao.DaoFactory;
+import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -10,6 +12,8 @@ public class Program {
 
         Department obj = new Department(1, "Livros");
         Seller seller = new Seller(21,"Tais", "t@gmail.com", new Date(), 4.000, obj);
+
+        SellerDao sellerDao = DaoFactory.createSellerDao(); //apenas a interface, podendo chamar qualquer implementação que esteja nela
         System.out.println(seller);
     }
 }
